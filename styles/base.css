@@ -4,10 +4,6 @@
     --accent1-color: white;
     --accent2-color: #964b00;
 
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
-    --calloutbox-font: 'Poppins', sans-serif;
-
     --nav-background-color: #135784;
     --nav-link-color: black;
     --nav-hover-link-color: white;
@@ -36,7 +32,7 @@ header img {
 header span {
     font-size: 2em;
     color: var(--accent1-color);
-    font-family: var(--heading-font);
+    font-family: "Roboto", sans-serif;;
 }
 
 
