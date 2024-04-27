@@ -33,7 +33,7 @@ header img {
     box-shadow: 5px 5px 10px black;
 }
 
-header h1 {
+header span {
     font-size: 2em;
     color: var(--accent1-color);
     font-family: var(--heading-font);
