@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #135784;
+    --secondary-color: black;
+    --accent1-color: white;
+    --accent2-color: #964b00;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --calloutbox-font: 'Poppins', sans-serif;
+
+    --nav-background-color: #135784;
+    --nav-link-color: black;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #964b00;
+}
+
+* {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+header h1 {
+    font-size: 2em;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centralizar os itens na horizontal */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+
+main h1 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+}
+
+
+.card {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.card ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+}
+
+.card h2 {
+    color: white;
+    padding: 5px;
+    margin: 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    padding: 30px;
+}
+
+
+footer {
+    background-color: #135784;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
