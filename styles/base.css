@@ -10,8 +10,15 @@
     --nav-hover-background-color: #964b00;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
 
 header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,58 +26,90 @@ header {
     background-color: var(--primary-color);
 }
 
-header img {
+#me {
     margin: 10px;
     box-shadow: 5px 5px 10px black;
 }
 
 header span {
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--accent1-color);
     font-family: "Roboto", sans-serif;;
 }
 
 
+
 nav {
     background-color: var(--secondary-color);
-
 }
 
-nav ul {
+#menu::before {
+    content: "☰";
+}
+
+#menu {
+    font-size: 2rem;
+    background: var(--nav-background-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .75rem 2vw;
+    text-decoration: none;
     list-style-type: none;
     margin-right: 2.5rem;
 }
 
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-    text-decoration: none;
+ul.navigation li a:hover {
+    background-color: #964b00;
 }
 
-nav a:hover {
-    background-color: #964b00;
+li.active a {
+    background-color: var(--primary-color);
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
 }
 
 
 
 main h1 {
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--primary-color);
     font-size: 1.5rem;
-
-}
-
-
-body {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .card {
     margin: 20px;
     box-shadow: 5px 5px 10px black;
+    background-color: white;
 }
 
 .card ul {
@@ -95,9 +134,53 @@ body {
 }
 
 
+
 footer {
     background-color: #135784;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+
+
+/* dark mode */
+#darkBtn {
+    position: absolute;
+    top: 2vw;
+    right: 2.5vw;
+    width: 44px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.dark {
+    background-color: black;
+}
+.dark header {
+    background-color: #0d354e;
+}
+
+.dark #me {
+    box-shadow: 5px 5px 10px white;
+}
+
+.dark nav {
+    background-color: #222;
+}
+
+.dark ul.navigation li a {
+    color: white;
+}
+
+
+.dark h1 {
+    color: white;
+}
+.dark footer {
+    background-color: #222;
+}
+
+.dark #darkBtn {
+    filter: invert(1);
 }

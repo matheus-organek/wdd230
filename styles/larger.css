@@ -1,12 +1,21 @@
 @media screen {
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 760px) {
        
-        nav ul {
+        #menu {
+            display: none;
+        }
+        nav {
+            grid-template-rows: 1fr;
+        }
+        ul.navigation, ul.navigation.open {
             display: flex;
+            font-size: 1.5rem;
         }
         nav ul li {
             flex: 1 1 100%;
         }
+        
+        
         main {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -16,6 +25,7 @@
             grid-column: 1/3;
         }
 
+      
         
     }
 }

@@ -25,12 +25,14 @@
 
 <body>
     <header>
-        <img src="images/matheus.jpeg" alt="Matheus Organek" width="100" height="125">
+        <img src="images/dark.svg" alt="dark mode" id="darkBtn">
+        <img src="images/matheus.jpeg" alt="Matheus Organek" width="100" height="125" id="me">
         <span>Matheus Organek</span>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+    <button id="menu"></button>
+    <nav id="animate">
+        <ul class="navigation">
+            <li class="active" ><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
@@ -63,8 +65,8 @@
         <p> &copy; <span id="year"></span> Matheus Organek | Brasil</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
-
 </html>
