@@ -10,22 +10,17 @@
     --nav-hover-background-color: #964b00;
 }
 
-* {
-    max-width: 500px;
-    margin: 0 auto;
-}
 
 header {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
 }
 
 header img {
-    margin-right: 20px;
+    margin: 10px;
     box-shadow: 5px 5px 10px black;
 }
 
@@ -38,52 +33,54 @@ header span {
 
 nav {
     background-color: var(--secondary-color);
-    padding: 10px;
+
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
+    margin-right: 2.5rem;
 }
 
 nav a {
-    text-decoration: none;
+    display: block;
     color: white;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: var(--nav-hover-background-color);
+    background-color: #964b00;
 }
+
 
 
 main h1 {
     padding: 10px;
     border-bottom: 1px solid black;
     font-size: 1.5rem;
+
 }
 
 
-.card {
+body {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+}
+
+.card {
     margin: 20px;
     box-shadow: 5px 5px 10px black;
 }
 
 .card ul {
     list-style: none;
-    margin: 0;
     padding: 30px;
 }
 
 .card h2 {
     color: white;
     padding: 5px;
-    margin: 0;
     background-color: var(--primary-color);
     text-align: center;
 }
@@ -91,6 +88,10 @@ main h1 {
 .card p {
     text-align: center;
     padding: 30px;
+}
+
+.card a {
+    text-decoration: none;
 }
 
 
