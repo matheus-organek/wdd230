@@ -130,7 +130,11 @@ main h1 {
 }
 
 .card a {
+    color: black;
     text-decoration: none;
+}
+.card a:hover {
+    color: var(--accent2-color); 
 }
 
 
@@ -172,13 +176,29 @@ footer {
 .dark ul.navigation li a {
     color: white;
 }
-
-
+.dark li.active a {
+    background-color: #0d354e;
+}
 .dark h1 {
     color: white;
 }
-.dark footer {
+.dark .card {
     background-color: #222;
+    box-shadow: 5px 5px 10px white;
+    color: white;
+}
+.dark .card h2 {
+    background-color: #0d354e;
+}
+.dark .card a {
+    color: white; 
+}
+
+.dark .card a:hover {
+    color: var(--accent2-color);
+}
+.dark footer {
+    background-color: #0d354e;
 }
 
 .dark #darkBtn {
