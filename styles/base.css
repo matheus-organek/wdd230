@@ -119,6 +119,7 @@ main h1 {
 
 .card h2 {
     color: white;
+    margin-top: 0;
     padding: 5px;
     background-color: var(--primary-color);
     text-align: center;
@@ -172,7 +173,9 @@ footer {
 .dark nav {
     background-color: #222;
 }
-
+.dark #menu {
+    background-color: #0d354e;
+}
 .dark ul.navigation li a {
     color: white;
 }
