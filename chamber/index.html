@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=h, initial-scale=1.0">
+        <title>Curitiba Chamber of Commerce</title>
+        <meta name="description"
+            content="Welcome to the Curitiba Chamber of Commerce portal. Here you will have access a lot of content about our beautiful city with great opportunities.">
+        <meta name="author" content="Matheus Organek">
+        <meta property="og:title" content="Curitiba Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://github.com/matheus-organek/wdd230/blob/main/images/matheus.jpeg">
+        <meta property="og:url" content="https://matheus-organek.github.io/wdd230/">
+        
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <div id="h">
+                <h1>Curitiba</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+            
+        </header>
+        <button id="menu"></button>
+        <nav id="animate">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join us</a></li>
+                
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <div class="hero">
+                    <img src="images/curitiba.jpg" alt="Curitiba">
+                    <a href="join.html" target="_blank" class="cta-link">Join the Chamber</a>
+                </div>
+            </section>
+            <section class="current-events">
+                <h2>Check our Newst Events</h2>
+                <h3>Event 1</h3>
+                <p>[Placeholder for Event 1]</p>
+                <h3>Event 2</h3>
+                <p>[Placeholder for Event 1]</p>
+                <h3>Event 3</h3>
+                <p>[Placeholder for Event 1]</p>
+            </section>
+            <section class="card">
+                <h2>Weather Information</h2>
+                <p>Weather: [Placeholder for weather]</p>
+            </section>
+            <section class="advertisements">
+                <h2>!ADVERTISEMENTS!</h2>
+                <p>[Placeholder for advertisement 1]</p>
+                <p>[Placeholder for advertisement 2]</p>
+                <p>[Placeholder for advertisement 3]</p>
+            </section>
+        </main>
+        <footer>
+            <div class="contact-info">
+                
+                <p>Av. Cândido de Abreu, 817 - Centro Cívico, Curitiba - PR</p>
+                <p>info@curtibachamber.org</p>
+            </div>
+            <div class="footer-info">
+                <p> &copy; <span id="year"></span> Matheus Organek |  WDD 230 Project | Last Modification: <span id="lastModified"></span></p>      
+            </div>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/navigation.js"></script>
+
+    </body>
+</html>

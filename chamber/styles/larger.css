@@ -1,0 +1,41 @@
+@media screen {
+    @media screen and (min-width: 760px) {
+       
+        #menu {
+            display: none;
+        }
+        nav {
+            grid-template-rows: 1fr;
+        }
+        ul.navigation, ul.navigation.open {
+            display: flex;
+            font-size: 1.5rem;
+        }
+        nav ul li {
+            flex: 1 1 100%;
+        }
+
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            background-color: #135784;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .footer-info {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+}
