@@ -26,7 +26,7 @@
 <body>
     <header>
         <img src="images/dark.svg" alt="dark mode" id="darkBtn">
-        <img src="images/matheus.jpeg" alt="Matheus Organek" width="100" height="125" id="me">
+        <img src="images/matheus.webp" alt="Matheus Organek"  id="me">
         <span>Matheus Organek</span>
     </header>
     <button id="menu"></button>
@@ -39,27 +39,45 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" loading="lazy" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" loading="lazy" media="(max-width: 960px)">
+                <img src="images/hero-larger.webp" alt="hero image" loading="lazy">
+            </picture>
+            <span>Salt Lake City Temple</span>
+            
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
-                <li>Week 1: <a href="#"></a></li>
+                <li>Week 1: #<a href="#"></a></li>
                 <li>Week 2: 
                     <a href="week02/design.html">Design |</a>
                     <a href="https://codepen.io/matheus-organek/pen/Pogvezr">Responsive Menu |</a>
                     <a href="week02/bom.html">Book of Mormon List</a>
                 </li>
-                <li>Week 3: <a href="#"></a></li>
-                <li>Week 4: <a href="#"></a></li>
-                <li>Week 5: <a href="#"></a></li>
-                <li>Week 6: <a href="#"></a></li>
+                <li>Week 3: 
+                    <a href="week03/images/landscape.webp">WebP |</a>
+                    <a href="week03/lazyload.html">Lazy Load Demonstration</a>
+                    <a href="week03/responsive-images.html">Responsive Images</a>
+                    <a href="week03/bom.html">Book of Mormon List</a>
+                </li>
+                <li>Week 4: #<a href="#"></a></li>
+                <li>Week 5: #<a href="#"></a></li>
+                <li>Week 6: #<a href="#"></a></li>
             </ul>
         </section>
         <section class="card">
             <h2>Information</h2>
             <p>Weather: [Placeholder for weather]</p>
-            <p>Number of visits: [Placeholder for number of visits]</p>
+            <p>Number of visits: <span class="visits"></span></p>
         </section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d230550.22855677304!2d-49.37896432087763!3d-25.46007542788815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1715299381411!5m2!1spt-BR!2sbr" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p> &copy; <span id="year"></span> Matheus Organek | Brasil</p>
@@ -68,5 +86,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

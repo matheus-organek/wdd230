@@ -11,6 +11,8 @@
 }
 
 body {
+    max-width: 1050px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -34,7 +36,8 @@ header {
 header span {
     font-size: 1.5em;
     color: var(--accent1-color);
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
+    ;
 }
 
 
@@ -57,7 +60,6 @@ nav {
     text-align: right;
     padding: .25rem 2vw;
 }
-
 ul.navigation li a {
     display: block;
     color: white;
@@ -67,56 +69,73 @@ ul.navigation li a {
     list-style-type: none;
     margin-right: 2.5rem;
 }
-
 ul.navigation li a:hover {
     background-color: #964b00;
 }
-
 li.active a {
     background-color: var(--primary-color);
 }
-
 ul.navigation {
     list-style-type: none;
 }
-
 #menu.open::before {
     content: "X";
 }
-
 nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
 }
-
 nav ul {
     overflow: hidden;
 }
-
 nav.open {
     grid-template-rows: 1fr;
 }
 
 
 
+.hero {
+    position: relative;
+}
+.hero picture {
+    width: 100%;
+    display: block;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero span {
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+main {
+    margin: 5px;
+}
 main h1 {
     padding: 10px;
     border-bottom: 1px solid var(--primary-color);
     font-size: 1.5rem;
 }
 
+
+
 .card {
     margin: 20px;
     box-shadow: 5px 5px 10px black;
     background-color: white;
 }
-
 .card ul {
     list-style: none;
     padding: 30px;
 }
-
 .card h2 {
     color: white;
     margin-top: 0;
@@ -124,21 +143,35 @@ main h1 {
     background-color: var(--primary-color);
     text-align: center;
 }
-
+.card li {
+    font-weight: 700;
+}
 .card p {
     text-align: center;
     padding: 30px;
+    font-weight: 700;
 }
-
 .card a {
+    font-weight: 100;
     color: black;
     text-decoration: none;
 }
 .card a:hover {
-    color: var(--accent2-color); 
+    color: var(--accent2-color);
 }
 
 
+
+.map {
+    position: relative;
+    margin: 20px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
 
 footer {
     background-color: #135784;
@@ -159,9 +192,11 @@ footer {
     text-decoration: none;
 
 }
+
 .dark {
     background-color: black;
 }
+
 .dark header {
     background-color: #0d354e;
 }
@@ -173,33 +208,41 @@ footer {
 .dark nav {
     background-color: #222;
 }
+
 .dark #menu {
     background-color: #0d354e;
 }
+
 .dark ul.navigation li a {
     color: white;
 }
+
 .dark li.active a {
     background-color: #0d354e;
 }
+
 .dark h1 {
     color: white;
 }
+
 .dark .card {
     background-color: #222;
     box-shadow: 5px 5px 10px white;
     color: white;
 }
+
 .dark .card h2 {
     background-color: #0d354e;
 }
+
 .dark .card a {
-    color: white; 
+    color: white;
 }
 
 .dark .card a:hover {
     color: var(--accent2-color);
 }
+
 .dark footer {
     background-color: #0d354e;
 }
