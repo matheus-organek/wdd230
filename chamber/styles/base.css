@@ -1,4 +1,7 @@
-
+body {
+    max-width: 1050px;
+    margin: 0 auto;
+}
 
 header {
     position: relative;
@@ -15,12 +18,14 @@ header {
 
 header h1 {
     color: white;
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
+    ;
 }
 
 nav {
     background-color: black;
 }
+
 #menu::before {
     content: "☰";
 }
@@ -78,13 +83,12 @@ nav.open {
 
 .hero {
     position: relative;
-    padding-top: 20px;
     text-align: center;
 }
 
 .hero img {
-    width: 747px;
-    max-height: 420px;
+    width: 100%;
+    height: auto;
 }
 
 .cta-link {
@@ -95,15 +99,96 @@ nav.open {
     text-decoration: none;
     font-size: 1rem;
     border-radius: 5px;
-    position: absolute; 
-    top: 50px; 
-    left: 325px; 
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
 .cta-link:hover {
     background-color: black;
 }
 
+
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover .hero figure {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.discover figcaption {
+    display: block;
+    text-align: center;
+    padding-bottom: 3px;
+    font-size: 1.25rem;
+}
+
+.discover h4 {
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid 1px black;
+    background-color: #135784;
+    text-align: center;
+}
+
+.discover .sidebar {
+    margin: 10px;
+}
+
+.discover .sidebar img {
+    display: block;
+    margin: 0 auto;
+}
+
+.discover .sidebar .information {
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.discover .sidebar .information p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.discover .sidebar .calendar {
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.discover .sidebar .map {
+    position: relative;
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.discover .sidebar .map iframe {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.discover .sidebar .visitation {
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.discover .sidebar .visitation p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.discover .images img {
+    width: 100%;
+    height: auto;
+}
 
 footer {
     display: flex;

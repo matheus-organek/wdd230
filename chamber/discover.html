@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Curitiba Chamber of Commerce Discover</title>
+    <meta name="description"
+        content="Welcome to the Curitiba Chamber of Commerce portal. Here you will have access a lot of content about our beautiful city with great opportunities.">
+    <meta name="author" content="Matheus Organek">
+    <meta property="og:title" content="Curitiba Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/matheus-organek/wdd230/blob/main/images/matheus.jpeg">
+    <meta property="og:url" content="https://matheus-organek.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="h">
+            <h1>Curitiba Chamber of Commerce</h1>
+        </div>
+
+    </header>
+    <button id="menu"></button>
+    <nav id="animate">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join us</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div class="discover">
+            <div class="hero">
+                <figure>
+                    <img src="images/curitiba-city-hall.webp" alt="hero image" loading="lazy">
+                    <figcaption>Curitiba</figcaption>
+                </figure>
+            </div>
+
+            <div class="sidebar">
+                <section class="information">
+                    <h4>ABOUT OUR CITY</h4>
+                    <figure>
+                        <figcaption>Center of Curitiba</figcaption>
+                        <img src="images/curitiba-information.webp" alt="Center of Curitiba" loading="lazy">
+                    </figure>
+                    <p>Curitiba, the capital of the state of Paraná, Brazil, has a population of approximately 1,948,626
+                        inhabitants, with an average population density of around 4,186 people per square kilometer. The
+                        city is one of the wealthiest in the country, with a nominal GDP in 2019 of approximately R$
+                        96.2 billion. The main economic sectors include services, industry, and commerce, with a focus
+                        on the automotive industry and information technology. Employment is predominantly driven by the
+                        service sector, followed by industry. Curitiba is renowned for its high-quality education,
+                        housing several higher education institutions such as UFPR and PUCPR. Additionally, the city is
+                        famous for its efficient public transportation system, notably the BRT. Quality of life is high,
+                        with a wide range of parks and green areas, and a well-planned urban infrastructure.</p>
+                </section>
+                <section class="calendar">
+                    <h4>CHECK OUR UPCOMING EVENTS</h4>
+                    <figure>
+                        <figcaption>June Calendar</figcaption>
+                        <img src="images/calendar.webp" alt="calendar" loading="lazy">
+                    </figure>
+                </section>
+                <section class="map">
+                    <h4>COME TO VISIT US</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.6399458737724!2d-49.27325711114501!3d-25.41686020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfcbd039d3ac9%3A0x7527b84876ee494a!2sPrefeitura%20Municipal%20de%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1715424100240!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section class="visitation">
+                    <h4>WELCOME TO OUR PAGE!</h4>
+                    <p><span class="visits"></span></p>
+                </section>
+            </div>
+            <div class="images">
+                <figure>
+                    <figcaption>Ukrainian Memorial</figcaption>
+                    <img src="images/curitiba-image1.webp" alt="curitiba image 1" loading="lazy">
+                </figure>
+                <figure>
+                    <figcaption>Tanguá Park</figcaption>
+                    <img src="images/curitiba-image2.webp" alt="curitiba image 2" loading="lazy">
+                </figure>
+                <figure>
+                    <figcaption>Eye Museum</figcaption>
+                    <img src="images/curitiba-image3.webp" alt="curitiba image 3" loading="lazy">
+                </figure>
+                <figure>
+                    <figcaption>Wire Opera</figcaption>
+                    <img src="images/curitiba-image4.webp" alt="curitiba image 4" loading="lazy">
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Av. Cândido de Abreu, 817 - Centro Cívico, Curitiba - PR</p>
+            <p>info@curtibachamber.org</p>
+        </div>
+        <div class="footer-info">
+            <p> &copy; <span id="year"></span> Matheus Organek | WDD 230 Project | Last Modification: <span
+                    id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
