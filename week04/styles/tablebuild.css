@@ -1,0 +1,27 @@
+:root {
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+
+
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 100px auto;
+	border-collapse: collapse;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
