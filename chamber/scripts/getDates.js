@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
     var formattedDate = lastModified.toLocaleDateString('en-US', options);
     document.getElementById("lastModified").textContent = formattedDate;
 });
+

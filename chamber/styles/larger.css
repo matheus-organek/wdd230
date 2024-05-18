@@ -84,5 +84,17 @@
             justify-content: center;
         }
 
+        .form {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .benefits {
+            margin-top: 32px;
+            margin-bottom: 94px;
+           
+            
+        }
     }
 }

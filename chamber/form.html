@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curitiba Chamber of Commerce Join Us Page</title>
+    <meta name="description"
+        content="Welcome to the Curitiba Chamber of Commerce form portal. Here you will have the opportunity to join us.">
+    <meta name="author" content="Matheus Organek">
+    <meta property="og:title" content="Curitiba Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/matheus-organek/wdd230/blob/main/images/matheus.jpeg">
+    <meta property="og:url" content="https://matheus-organek.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="h">
+            <h1>Curitiba Chamber of Commerce</h1>
+        </div>
+    </header>
+    <button id="menu"></button>
+    <nav id="animate">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="form.html">Join us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form">
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+
+                    <label>Title or Position <input type="text" name="applicantTitle" id="applicantTitle"
+                            pattern="^[A-Za-z\s\-]{7,}$"
+                            title="Only alphabetic characters, hyphens, and spaces are allowed, with a minimum of seven characters."></label>
+
+                    <label>E-mail* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                            required></label>
+
+                    <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required></label>
+
+                    <label>Business/Organization's Name* <input type="text" name="organizationName" id="organizationName"
+                            required></label>
+
+                    <label>Membership Level:</label>
+                    <select name="membershipLevel" id="membershipLevel">
+                        <option value="">Select a membership level</option>
+                        <option value="np">NP Membership (Non-profit, no fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="businessDescription">Business/Organization's Description: </label>
+                    <textarea name="businessDescription" id="businessDescription" rows="4" cols="50"
+                        placeholder="Describe your business or organization here..."></textarea>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Join the Curitiba Chamber of Commerce">
+            </form>
+            <div class="benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> No fee, includes access to special events for non-profits.</li>
+                    <li><strong>Bronze Membership:</strong> Includes event discounts and access to online training
+                        resources.</li>
+                    <li><strong>Silver Membership:</strong> Includes all Bronze benefits plus spotlight positions on the
+                        home page.</li>
+                    <li><strong>Gold Membership:</strong> Includes all Silver benefits plus exclusive invitations to special
+                        events and advertising discounts.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Av. Cândido de Abreu, 817 - Centro Cívico, Curitiba - PR</p>
+            <p>info@curtibachamber.org</p>
+        </div>
+        <div class="footer-info">
+            <p> &copy; <span id="year"></span> Matheus Organek | WDD 230 Project | Last Modification: <span
+                    id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>
