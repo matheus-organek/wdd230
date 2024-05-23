@@ -1,0 +1,18 @@
+{
+    "familyName": "Organek",
+    "movedWard": 2023,
+    "peopleFamily": 2,
+    "visited": false,
+    "familyMember": [
+        {
+            "name": "Matheus",
+            "gender": "male",
+            "birthday": "21/07/2000"
+        },
+        {
+            "name": "Heloisa",
+            "gender": "female",
+            "birthday": "06/08/1999"
+        }
+    ]
+}
