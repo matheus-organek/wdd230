@@ -153,9 +153,9 @@ main h1 {
     
 }
 
-.card ul {
+/* .card ul {
     list-style: none;
-}
+} */
 
 .card h3 {
     color: var(--primary-color);
@@ -174,7 +174,7 @@ main h1 {
     margin: .3rem 0;
 }
 
-.card li {
+/* .card li {
     font-weight: 700;
 }
 
@@ -190,6 +190,44 @@ main h1 {
 
 .card a:hover {
     color: var(--accent2-color);
+} */
+
+#learning-activities {
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.week-section {
+    margin-bottom: 1.5em;
+}
+
+.week-section h3 {
+    display: inline; /* Para manter o título na mesma linha dos links */
+    margin-right: 0.5em; /* Espaçamento entre o título e os links */
+    font-size: 1.2em;
+    color: #333;
+}
+
+.week-section ul {
+    display: inline; /* Para manter a lista na mesma linha */
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remover margens padrão */
+}
+
+.week-section li {
+    display: inline; /* Para exibir os itens em linha */
+    margin-right: 0.5em; /* Espaçamento entre os links */
+}
+
+.week-section a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.week-section a:hover {
+    text-decoration: underline;
 }
 
 

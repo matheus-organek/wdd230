@@ -1,7 +1,7 @@
 {
     "weeks" : [
         {
-            "week" : "Week 1",
+            "week" : "Week 1:",
             "links" : [
                 {
 
@@ -10,11 +10,11 @@
         },
 
         {
-            "week" : "Week 2",
+            "week" : "Week 2:",
             "links" : [
                 {
                     "url" : "week02/design.html",
-                    "title" : "design"
+                    "title" : "Design"
                 },
                 {
                     "url" : "https://codepen.io/matheus-organek/pen/Pogvezr",
@@ -28,7 +28,7 @@
         },
 
         {
-            "week" : "Week 3",
+            "week" : "Week 3:",
             "links" : [
                 {
                     "url" : "week03/images/landscape.webp",
@@ -50,7 +50,7 @@
         },
         
         {
-            "week" : "Week 4",
+            "week" : "Week 4:",
             "links" : [
                 {
                     "url" : "https://codepen.io/matheus-organek/pen/XWwbWyB",
@@ -68,7 +68,7 @@
         },
         
         {
-            "week" : "Week 5",
+            "week" : "Week 5:",
             "links" : [
                 {
                     "url" : "https://codepen.io/matheus-organek/pen/OJYNLoQ?editors=1010",
