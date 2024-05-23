@@ -138,6 +138,9 @@ main h1 {
 }
 
 
+section {
+    border-radius: 6px;
+}
 
 .card {
     box-shadow: 5px 5px 10px black;
@@ -152,8 +155,6 @@ main h1 {
     text-align: center;
     
 }
-
-
 
 .card h3 {
     color: var(--primary-color);
