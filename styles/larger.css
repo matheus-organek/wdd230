@@ -33,6 +33,13 @@
             bottom: 85%;
         }
         
+        .card {
+            margin: 10px;
+        }
+
+        .card h2 {
+            margin-top: 0px;
+        }
         
         .map {
             grid-column: span 2;
