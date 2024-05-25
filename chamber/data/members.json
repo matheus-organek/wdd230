@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Company One",
+            "address": "123 Elm St, Springfield, IL",
+            "phone": "555-1234",
+            "website": "http://www.companyone.com",
+            "image": "company1.png",
+            "membership_level": "Gold",
+            "description": "A leading company in industry one."
+        },
+        {
+            "name": "Company Two",
+            "address": "456 Oak St, Springfield, IL",
+            "phone": "555-5678",
+            "website": "http://www.companytwo.com",
+            "image": "company2.png",
+            "membership_level": "Silver",
+            "description": "Innovative solutions for industry two."
+        },
+        {
+            "name": "Company Three",
+            "address": "789 Pine St, Springfield, IL",
+            "phone": "555-8765",
+            "website": "http://www.companythree.com",
+            "image": "company3.png",
+            "membership_level": "Platinum",
+            "description": "Leading the market in industry three."
+        },
+        {
+            "name": "Company Four",
+            "address": "101 Maple St, Springfield, IL",
+            "phone": "555-4321",
+            "website": "http://www.companyfour.com",
+            "image": "company4.png",
+            "membership_level": "Gold",
+            "description": "Excellence in industry four."
+        },
+        {
+            "name": "Company Five",
+            "address": "202 Birch St, Springfield, IL",
+            "phone": "555-6543",
+            "website": "http://www.companyfive.com",
+            "image": "company5.png",
+            "membership_level": "Silver",
+            "description": "Top services in industry five."
+        },
+        {
+            "name": "Company Six",
+            "address": "303 Cedar St, Springfield, IL",
+            "phone": "555-3210",
+            "website": "http://www.companysix.com",
+            "image": "company6.png",
+            "membership_level": "Platinum",
+            "description": "Pioneers in industry six."
+        },
+        {
+            "name": "Company Seven",
+            "address": "404 Walnut St, Springfield, IL",
+            "phone": "555-0987",
+            "website": "http://www.companyseven.com",
+            "image": "company7.png",
+            "membership_level": "Gold",
+            "description": "Experts in industry seven."
+        }
+    ]
+}

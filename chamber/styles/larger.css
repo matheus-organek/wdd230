@@ -93,8 +93,10 @@
         .benefits {
             margin-top: 32px;
             margin-bottom: 94px;
-           
-            
+        }
+
+        .grid-view .member-card {
+            width: 28.3%;
         }
     }
 }

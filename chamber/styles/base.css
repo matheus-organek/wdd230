@@ -19,7 +19,6 @@ header {
 header h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    ;
 }
 
 nav {
@@ -286,4 +285,37 @@ footer {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+
+.container button {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+}
+
+.grid-view .member-card,
+.list-view .member-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+}
+
+.grid-view .member-card {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+.list-view .member-card {
+    display: block;
+   
+}
+
+.member-card img {
+    height: auto;
 }
