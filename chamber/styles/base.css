@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin: 5px;
+}
+
 header {
     position: relative;
     display: flex;
@@ -80,6 +84,11 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
+li.active a {
+    background-color: #135784;
+}
+
+
 .hero {
     position: relative;
     text-align: center;
@@ -99,8 +108,8 @@ nav.open {
     font-size: 1rem;
     border-radius: 5px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 15px;
+    left: 15px;
 }
 
 .cta-link:hover {
@@ -108,9 +117,7 @@ nav.open {
 }
 
 
-main {
-    margin: 5px;
-}
+
 
 .discover {
     display: flex;
@@ -142,12 +149,15 @@ main {
 }
 
 .discover .sidebar {
-    margin: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .discover .sidebar img {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .discover .sidebar .information {
@@ -235,8 +245,8 @@ footer {
     border-radius: 6px;
     color: #555;
     padding: .75rem;
-    width: 100%;
-    max-width: 400px;
+    max-width: 350px;
+    width: 90%;
 }
 
 .wf1 input[type="submit"] {
@@ -267,7 +277,7 @@ footer {
 
 .wf1 textarea {
     width: 100%;
-    max-width: 420px;
+    max-width: 350px;
 }
 
 .benefits {
@@ -318,4 +328,107 @@ footer {
 
 .member-card img {
     height: auto;
+}
+
+.weather-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.weather-section h2, .weather-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.weather-section p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.weather-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.weather-section img {
+    display: block;
+    margin: 10px auto;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#forecast-container div {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#forecast-container div h3, #forecast-container div p {
+    margin: 0;
+}
+
+
+
+.advertisements {
+    text-align: center;
+}
+
+#spotlight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-member {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spotlight-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.spotlight-member h3 {
+    margin: 10px 0;
+}
+
+.spotlight-member p {
+    margin: 5px 0;
+}
+
+.event-banner {
+    display: none;
+    background-color: #135784;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    height: 500px;
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curitiba Chamber of Commerce</title>
+    <title>The Curitiba Chamber of Commerce plays a crucial role in the economic development of the region.</title>
     <meta name="description"
         content="Welcome to the Curitiba Chamber of Commerce portal. Here you will have access a lot of content about our beautiful city with great opportunities.">
     <meta name="author" content="Matheus Organek">
@@ -23,16 +23,16 @@
 </head>
 
 <body>
+    
     <header>
         <div id="h">
             <h1>Curitiba Chamber of Commerce</h1>
         </div>
-
     </header>
     <button id="menu"></button>
     <nav id="animate">
         <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join us</a></li>
@@ -45,24 +45,24 @@
                 <a href="join.html" target="_blank" class="cta-link">Join the Chamber</a>
             </div>
         </section>
-        <section class="current-events">
-            <h2>Check our Newst Events</h2>
-            <h3>Event 1</h3>
-            <p>[Placeholder for Event 1]</p>
-            <h3>Event 2</h3>
-            <p>[Placeholder for Event 1]</p>
-            <h3>Event 3</h3>
-            <p>[Placeholder for Event 1]</p>
-        </section>
-        <section class="card">
+        <div id="event-banner" class="event-banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner" class="close-banner">❌</button>
+        </div>
+        <section class="card weather-section">
             <h2>Weather Information</h2>
-            <p>Weather: [Placeholder for weather]</p>
+            <p id="current-weather">Weather: <span id="current-temp">[Loading...]</span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="Weather icon">
+                <figcaption></figcaption>
+            </figure>
+            <div id="forecast-container">
+                <h3>3-day Forecast</h3>
+            </div>
         </section>
         <section class="advertisements">
-            <h2>!ADVERTISEMENTS!</h2>
-            <p>[Placeholder for advertisement 1]</p>
-            <p>[Placeholder for advertisement 2]</p>
-            <p>[Placeholder for advertisement 3]</p>
+            <h2>Spotlight Advertisements</h2>
+            <div id="spotlight-container"></div>
         </section>
     </main>
     <footer>
@@ -78,7 +78,9 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigation.js"></script>
-
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/getMembers.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
